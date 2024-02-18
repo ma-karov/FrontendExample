@@ -1,0 +1,481 @@
+
+body, h1, h2, h3, h4, h5, h6 { 
+    margin: 0; 
+    padding: 0;
+} 
+
+body { background-color: #DDD; }
+
+/* HEADER */
+#ID_HEADER_CONTAINER_TOP { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 40px 40px 80px; 
+} 
+
+#ID_HEADER_CONTAINER_TOP nav { 
+    display: inline; 
+    padding: 0 10px;
+} 
+
+#ID_HEADER_CONTAINER_TOP > a { 
+    border: #000 2px solid; 
+} 
+
+#ID_HEADER_CONTAINER_TOP > a ruby { 
+    display: block; 
+    padding: 2px 20px; 
+}
+
+#ID_HEADER_CONTAINER_TOP nav a, #ID_HEADER_CONTAINER_TOP a { 
+    text-decoration: none; 
+    display: inline-block; 
+    padding: 10px;     
+    vertical-align: top; 
+    margin: 0 10px; 
+    color: #999; 
+    transition: border 2s linear;
+} 
+
+#ID_HEADER_CONTAINER_TOP nav a:hover { 
+    border: 2px solid #333;     
+} 
+
+#ID_HEADER_CONTAINER { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 40px; 
+} 
+
+#ID_HEADER_CONTAINER div { 
+    max-width: 40%; 
+} 
+
+#ID_HEADER_CONTAINER div h1 { 
+    font-size: 60px; 
+    line-height: .8; 
+    padding-bottom: 20px;
+} 
+
+#ID_HEADER_CONTAINER div h4 { 
+    font-weight: 400; 
+    color: #444; 
+    padding-bottom: 20px; 
+} 
+
+#ID_HEADER_CONTAINER div div { 
+    padding-top: 20px; 
+} 
+
+#ID_HEADER_CONTAINER div a { 
+    padding: 10px 40px; 
+    background-color: #000; 
+    color: #FFF;  
+    text-decoration: none; 
+    font-weight: 700; 
+} 
+
+#ID_HEADER_CONTAINER img { 
+    width: 400px; 
+}
+
+#ID_HEADER_CONTAINER_BOTTOM { 
+    background-color: #000; 
+    color: #FFF; 
+    padding: 30px; 
+} 
+
+#ID_HEADER_CONTAINER_BOTTOM div { 
+    width: 100%; 
+    max-width: 400px; 
+    text-align: center; 
+    margin: 0 auto;
+} 
+
+#ID_HEADER_CONTAINER_BOTTOM div h1 { 
+    font-size: 50px; 
+} 
+
+
+#ID_HEADER_CONTAINER_BOTTOM div p { 
+    color: #CCC;
+}
+
+#ID_HEADER_CONTAINER_BOTTOM div div { 
+    padding: 30px 0;
+}
+
+#ID_HEADER_CONTAINER_BOTTOM div div a { 
+    text-decoration: none; 
+    color: #FFF; 
+    font-weight: 700;  
+    padding: 10px 50px; 
+    border: 3px solid white; 
+    border-radius: 5px;
+} 
+
+/* SECTION LIST PLACES */ 
+#ID_SECTION_LIST_PLACES { padding: 80px 30px 40px; } 
+
+/* TOP */ 
+#ID_SECTION_LIST_PLACES_CONTAINER_TOP { 
+    display: inline; 
+} 
+
+#ID_SECTION_LIST_PLACES_CONTAINER_TOP div { 
+    display: inline-block; 
+    vertical-align: top; 
+    padding: 0 5% 20px;
+    max-width: 400px; 
+} 
+
+#ID_SECTION_LIST_PLACES_CONTAINER_TOP div h2 { 
+    font-size: 40px; 
+    padding: 20px 0;
+} 
+
+#ID_SECTION_LIST_PLACES_CONTAINER_TOP div h2::before { 
+    content: ""; 
+    display: block; 
+    width: 50px; 
+    border-top: 3px solid #000; 
+    margin-bottom: 10px;
+} 
+
+/* MIDDLE */ 
+#ID_SECTION_LIST_PLACES_CONTAINER { 
+    display: block; 
+    padding: 300px 20px 100px; 
+    text-align: center; 
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 900px; 
+} 
+
+#ID_SECTION_LIST_PLACES_CONTAINER h1 { 
+    font-size: 100px; 
+    line-height: .9; 
+    padding: 60px 0;
+} 
+
+#ID_SECTION_LIST_PLACES_CONTAINER h1 span { 
+    border-bottom: 5px solid black;
+}
+
+#ID_SECTION_LIST_PLACES_CONTAINER h3 { 
+    display: inline; 
+    padding: 0 3px;
+} 
+
+#ID_SECTION_LIST_PLACES_CONTAINER h3:not(:nth-child(2)) { 
+    border-left: 1px solid black; 
+}
+
+/* BOTTOM */
+#ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM { 
+    display: flex; 
+    justify-content: space-around; 
+} 
+
+#ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM img { width: 60%; } 
+
+#ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM div img { 
+    display: block; 
+    padding-bottom: 60px; 
+}
+
+#ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM div h2, #ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM div h4 { 
+    display: inline-block; 
+    width: 200px;
+} 
+
+#ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM div h2 { 
+    text-decoration: underline; 
+    font-size: 40px; 
+    line-height: 1.5; 
+    padding-right: 60px; 
+} 
+
+#ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM div h4 { 
+    width: 300px; 
+    font-weight: 400; 
+    font-size: 20px;
+    line-height: 1.5; 
+} 
+
+#ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM div svg:hover { 
+    border: 2px solid #000; 
+    cursor: pointer; 
+} 
+
+/* SECTION CHOOSE ANYWHERE */ 
+#ID_SECTION_CHOOSE_ANYWHERE { 
+    padding: 150px 40px; 
+    background-color: #000; 
+    color: #EEE
+} 
+
+#ID_SECTION_CHOOSE_ANYWHERE_CONTAINER { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+
+#ID_SECTION_CHOOSE_ANYWHERE_CONTAINER div { 
+    width: 550px; 
+} 
+
+#ID_SECTION_CHOOSE_ANYWHERE_CONTAINER div h1 { 
+    padding-bottom: 60px; 
+    font-size: 70px; 
+    line-height: 1.1;
+} 
+
+#ID_SECTION_CHOOSE_ANYWHERE_CONTAINER div h2 { 
+    padding-top: 50px;
+} 
+
+#ID_SECTION_CHOOSE_ANYWHERE_CONTAINER div h3 { 
+    padding-top: 15px; 
+    font-weight: 100; 
+    color: #DDD;
+} 
+
+#ID_SECTION_CHOOSE_ANYWHERE_CONTAINER img { width: 45%; } 
+
+/* SECTION REVIEWS USERS */ 
+#ID_SECTION_REVIEWS_USERS { 
+    padding: 200px 10px; 
+} 
+
+/* TOP */
+#ID_SECTION_REVIEWS_USERS_CONTAINER_TOP { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: top; 
+    padding: 0 10px 100px; 
+} 
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_TOP h1 { 
+    padding-bottom: 30px;
+} 
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_TOP div label { 
+    display: block;
+    border-top: 2px solid black; 
+    padding: 10px 0; 
+    font-size: 12px; 
+    position: relative; 
+} 
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_TOP div label:last-child { border-bottom: 2px solid black; } 
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_TOP div label input[type = "checkbox"] { display: none; }
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_TOP div label input[type = "checkbox"]:checked + ruby::before, 
+#ID_SECTION_REVIEWS_USERS_CONTAINER_TOP div label input[type = "checkbox"]:not(:checked) + ruby::before { 
+    content: "+"; 
+    font-size: 32px; 
+} 
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_TOP div label input[type = "checkbox"]:checked + ruby::before { 
+    content: "-";
+}
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_TOP div label input[type = "checkbox"]:checked + ruby + h3 { 
+    display: block; 
+}
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_TOP div label h3 { 
+    display: none; 
+
+}
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_TOP img { 
+    padding: 20px 0 20px 20px; 
+    height: 240px; 
+} 
+
+/* CENTER */ 
+#ID_SECTION_REVIEWS_USERS_CONTAINER_CENTER { 
+    padding: 70px 10px; 
+    text-align: center; 
+    margin: 0 auto; 
+} 
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_CENTER h1 { 
+    font-size: 40px; 
+    padding-bottom: 40px; 
+    text-align: center; 
+    margin: 0 auto;
+    max-width: 300px; 
+    width: 100%;
+} 
+
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_CENTER div div { 
+    display: inline-block; 
+    padding: 40px 20px; 
+    margin: 2px; 
+    border: 2px solid black; 
+    border-radius: 5px; 
+    width: 30%; 
+}
+
+/* BOTTOM */ 
+#ID_SECTION_REVIEWS_USERS_CONTAINER_BOTTOM { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;   
+} 
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_BOTTOM div h1 { font-size: 40px; } 
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_BOTTOM div input, #ID_SECTION_REVIEWS_USERS_CONTAINER_BOTTOM div a { 
+    display: block; 
+} 
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_BOTTOM div input, #ID_SECTION_REVIEWS_USERS_CONTAINER_BOTTOM div textarea { 
+    margin: 10px 0; 
+    height: 50px; 
+    width: 250px; 
+    display: block; 
+    border: 2px solid black; 
+    border-radius: 5px; 
+} 
+
+#ID_SECTION_REVIEWS_USERS_CONTAINER_BOTTOM div a { 
+    margin-top: 20px; 
+    padding: 10px; 
+    background-color: #000; 
+    color: #DDD; 
+    text-decoration: none; 
+    text-align: center; 
+} 
+
+/* FOOTER */ 
+footer { 
+    background-color: #C5C5C5; 
+    padding: 60px 40px;
+} 
+
+#ID_FOOTER_CONTAINER > div { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: start; 
+    padding-bottom: 40px; 
+} 
+#ID_FOOTER_CONTAINER div div { 
+    width: 90%; 
+}
+
+#ID_FOOTER_CONTAINER div div h3 { 
+    padding-bottom: 10px; 
+} 
+
+#ID_FOOTER_CONTAINER div div nav { 
+    display: flex; 
+    justify-content: space-between; 
+} 
+
+#ID_FOOTER_CONTAINER div div nav ul { 
+    list-style-type: none; 
+    padding-inline-start: 0;
+} 
+
+#ID_FOOTER_CONTAINER div div nav ul li { 
+    padding-bottom: 10px; 
+}
+
+#ID_FOOTER_CONTAINER div div nav ul li a { 
+    text-decoration: none; 
+    color: #777; 
+} 
+
+#ID_FOOTER_CONTAINER span { 
+    display: block;
+    text-align: center; 
+} 
+
+@media ( max-width: 950px ) { 
+
+    /* SECTION REVIEWS USERS */ 
+    #ID_SECTION_REVIEWS_USERS_CONTAINER_BOTTOM img { width: 60%; }
+} 
+
+@media ( max-width: 768px ) { 
+
+    /* SECTION CHOOSE ANYWHERE */ 
+    #ID_SECTION_CHOOSE_ANYWHERE_CONTAINER div h1 { 
+        font-size: 50px;
+    } 
+}
+
+@media ( max-width: 700px ) { 
+
+    /* HEADER */ 
+    #ID_HEADER_CONTAINER { 
+        display: block; 
+    } 
+    
+    #ID_HEADER_CONTAINER div { 
+        max-width: 100%;
+    } 
+
+    #ID_HEADER_CONTAINER div div a { 
+        display: block; 
+    } 
+
+    #ID_HEADER_CONTAINER img { 
+        padding-top: 20px; 
+    } 
+
+    /* SECTION LIST PLACES CONTAINER */ 
+    #ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM { 
+        display: block; 
+    } 
+
+    #ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM img { width: 100%; } 
+
+    #ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM div img { padding-bottom: 10px; } 
+
+    #ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM div h2, #ID_SECTION_LIST_PLACES_CONTAINER_BOTTOM div h4 { 
+        width: 100%;
+    } 
+
+    /* SECTION CHOOSE ANYWHERE */ 
+    #ID_SECTION_CHOOSE_ANYWHERE_CONTAINER { display: block; } 
+
+    #ID_SECTION_CHOOSE_ANYWHERE_CONTAINER div { padding-bottom: 20px; }
+
+    #ID_SECTION_CHOOSE_ANYWHERE_CONTAINER div, #ID_SECTION_CHOOSE_ANYWHERE_CONTAINER img { 
+        width: 100%; 
+    } 
+
+    /* SECTION REVIEWS USERS */ 
+    
+    /* TOP */ 
+    #ID_SECTION_REVIEWS_USERS_CONTAINER_TOP { display: block; } 
+
+    /* BOTTOM */ 
+    #ID_SECTION_REVIEWS_USERS_CONTAINER_BOTTOM, 
+    #ID_SECTION_REVIEWS_USERS_CONTAINER_BOTTOM div { display: block; } 
+
+    #ID_SECTION_REVIEWS_USERS_CONTAINER_BOTTOM div { 
+        text-align: center; 
+    } 
+
+}
+
+@media ( max-width: 750px ) { 
+
+    /* FOOTER */ 
+    #ID_FOOTER_CONTAINER div, #ID_FOOTER_CONTAINER div div nav { display: block; } 
+}
+
+@media ( max-width: 500px ) { 
+    #ID_SECTION_REVIEWS_USERS_CONTAINER { display: block; }
+
+} 

@@ -1,0 +1,494 @@
+
+body, h1, h2, h3, h4, h5, h6 { 
+    margin: 0; 
+    padding: 0; 
+} 
+
+body { font-size: 14px; } 
+
+/* HEAD TOP */
+#ID_HEADER_CONTAINER_INNER_TOP { 
+    background-color: #FEF7F6; 
+    padding: 20px 0; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_TOP, #ID_HEADER_CONTAINER_INNER_TOP div { 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+} 
+
+#ID_HEADER_CONTAINER_INNER_TOP div h6 { 
+    padding: 0 10px; 
+    font-weight: 100; 
+}
+
+#ID_HEADER_CONTAINER_INNER_TOP div { 
+    text-transform: uppercase; 
+} 
+
+/* HEAD */
+#ID_HEADER_CONTAINER_INNER { 
+    padding-top: 5px;
+    width: 100%; 
+    max-width: 1200px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+} 
+
+#ID_LOGO_LINK { 
+    font-size: 40px; 
+    font-weight: 700; 
+    color: #000; 
+    text-decoration: none; 
+} 
+
+/* HEAD NAV BURGER */ 
+#ID_HEADER_CONTAINER_INNER_SUB_NAV_BURGER { 
+    display: none; 
+    width: 20px; 
+    margin-top: 20px; 
+    padding: 4px 0;
+    border-top: 1px solid #000; 
+    border-bottom: 1px solid #000; 
+    cursor: pointer; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_SUB_NAV_BURGER ruby { 
+    display: block; 
+    width: 20px; 
+    border-top: 1px solid #000; 
+} 
+
+#ID_INPUT_CHECKBOX_NAV_BURGER { display: none; } 
+
+#ID_INPUT_CHECKBOX_NAV_BURGER:checked + #ID_HEADER_CONTAINER_INNER_NAV { display: block; }
+
+/* HEAD NAV */ 
+#ID_HEADER_CONTAINER_INNER_NAV { 
+    font-size: 15px; 
+    text-transform: uppercase; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_NAV ul { 
+    list-style-type: none;  
+    display: flex; 
+    padding-left: 0; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_NAV > ul { 
+    justify-content: space-between; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_NAV ul li a { 
+    text-decoration: none; 
+    color: #000; 
+    padding: 15px 20px; 
+    transition-property: color; 
+    transition-duration: 0.5s; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_NAV ul li a:hover { 
+    border: 1px solid black;
+    color: rgba(255, 0, 0, 0.7); 
+} 
+
+#ID_HEADER_CONTAINER_INNER_NAV > ul li:first-child a { 
+} 
+
+#ID_HEADER_CONTAINER_INNER_NAV > ul li:first-child ul { 
+    flex-direction: column; 
+    position: absolute; 
+    padding-top: 30px; 
+
+    clip: rect(0 0 0 0); 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_NAV > ul li:first-child ul li { 
+    position: relative; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_NAV > ul li:first-child:hover ul { 
+    clip: auto; 
+    width: auto; 
+    height: auto; 
+    margin: 0; 
+    background-color: #FFF; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_NAV > ul li:first-child ul li { 
+    padding: 15px 0; 
+    margin: 0; 
+} 
+
+/* HEAD BOTTOM */
+#ID_HEADER_CONTAINER_INNER_BOTTOM_BANNER { 
+    background: url("../Images/bg-HEADER.jpg") center no-repeat; 
+    -webkit-background-size: cover;
+    background-size: cover; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_BOTTOM_BANNER_TITLE { 
+    display: flex; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+#ID_HEADER_CONTAINER_INNER_BOTTOM_BANNER_TITLE div { 
+    text-transform: uppercase; 
+    color: #555; 
+    font-size: 15px;     
+} 
+
+#ID_HEADER_CONTAINER_INNER_BOTTOM_BANNER_TITLE h1 { 
+    font-size: 40px; 
+    color: #FFF; 
+    max-width: 400px; 
+    width: 100%; 
+    padding-bottom: 30px;
+} 
+
+/* HEADER CONTAINER, SECTION SALE PRICE CONTAINER */
+#ID_HEADER_CONTAINER_INNER_BOTTOM_BANNER_TITLE div a, #ID_SECTION_SALE_PRICE_CONTAINER_INNER_BANNER_TITLE a { 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    background-color: rgba(255, 0, 0, 0.6); 
+    color: #FFF; 
+    font-weight: 700;
+    padding: 15px 30px; 
+    transition-property: background-color, color; 
+    transition-duration: 500ms; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_BOTTOM_BANNER_TITLE div a:hover, #ID_SECTION_SALE_PRICE_CONTAINER_INNER_BANNER_TITLE div a:hover { 
+    background-color: white; 
+    color: royalblue; 
+} 
+
+#ID_HEADER_CONTAINER_INNER_BOTTOM_BANNER img { 
+    width: 45%; 
+} 
+
+/* SECTION LIST PRICE */ 
+.CLASS_SECTION_LIST_PRICE { 
+    padding: 50px 0; 
+} 
+
+.CLASS_SECTION_LIST_PRICE_CONTAINER { 
+    text-align: center; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+} 
+
+.CLASS_SECTION_LIST_PRICE_CONTAINER h1 {  
+    font-size: 40px; 
+    text-transform: uppercase; 
+    padding-bottom: 80px; 
+} 
+
+.CLASS_SECTION_LIST_PRICE_CONTAINER div { 
+    display: flex; 
+    justify-content: space-between; 
+} 
+
+.CLASS_SECTION_LIST_PRICE_CONTAINER div div { 
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    padding-left: 10px; 
+} 
+
+.CLASS_SECTION_LIST_PRICE_CONTAINER div div ruby { 
+    position: absolute; 
+    width: 100%; 
+    top: 50%; 
+    left: 0; 
+    z-index: 1; 
+    transform: translate3d(0, -50%, 0); 
+    opacity: 0; 
+
+    transition: opacity 500ms linear; 
+
+} 
+
+.CLASS_SECTION_LIST_PRICE_CONTAINER div div:hover ruby { 
+    opacity: 1;  
+} 
+
+.CLASS_SECTION_LIST_PRICE_CONTAINER div div ruby a { 
+    border-radius: 50%; 
+    padding: 20px; 
+    margin: 2px; 
+    background-color: white; 
+    transition: background-color 500ms linear; 
+} 
+
+.CLASS_SECTION_LIST_PRICE_CONTAINER div div ruby a:hover { 
+    background-color: rgb(200, 0, 0); 
+} 
+
+.CLASS_SECTION_LIST_PRICE div div img { 
+    padding-bottom: 20px; 
+    width: 90%;
+} 
+
+.CLASS_SECTION_LIST_PRICE div div a { 
+    text-decoration: none; 
+    color: #777; 
+} 
+
+.CLASS_SECTION_LIST_PRICE div div p { 
+    font-size: 16px;
+}
+
+/* SECTION SALE PRICE */ 
+#ID_SECTION_SALE_PRICE { 
+    background-color: #EAE2D8; 
+} 
+
+#ID_SECTION_SALE_PRICE_CONTAINER { 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+} 
+
+#ID_SECTION_SALE_PRICE_CONTAINER img { 
+    width: 45%; 
+} 
+
+#ID_SECTION_SALE_PRICE_CONTAINER_INNER_BANNER_TITLE { 
+    text-align: center; 
+} 
+
+#ID_SECTION_SALE_PRICE_CONTAINER_INNER_BANNER_TITLE h1, #ID_SECTION_SALE_PRICE_CONTAINER_INNER_BANNER_TITLE div:first-child { 
+    font-size: 32px; 
+}
+
+#ID_SECTION_SALE_PRICE_CONTAINER_INNER_BANNER_TITLE div { 
+    text-transform: uppercase; 
+} 
+
+#ID_SECTION_SALE_PRICE_CONTAINER_INNER_BANNER_TITLE div:nth-child(2) { 
+    padding: 10px 0 30px; 
+} 
+
+/* SECTION ADVANTAGES */ 
+#ID_SECTION_ADVANTAGES { padding: 40px 0; } 
+
+#ID_SECTION_ADVANTAGES_CONTAINER { 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+} 
+
+#ID_SECTION_ADVANTAGES_CONTAINER div { 
+    display: inline-block; 
+    vertical-align: top; 
+    padding: 10px;
+} 
+
+#ID_SECTION_ADVANTAGES_CONTAINER div div { 
+    border: 1px solid #EBEEF0; 
+    text-align: center; 
+    margin: 0 5px; 
+    padding: 30px; 
+} 
+
+#ID_SECTION_ADVANTAGES_CONTAINER div div h3 { 
+    padding-top: 10px; 
+    color: #888; 
+    font-weight: 400; 
+    line-height: 1.0;
+} 
+
+/* SECTION TABLE NEWS */ 
+#ID_SECTION_TABLE_NEWS { padding: 0 10px; } 
+
+#ID_SECTION_TABLE_NEWS_CONTAINER { 
+    text-align: center; 
+} 
+
+#ID_SECTION_TABLE_NEWS_CONTAINER h1 { 
+    font-size: 40px; 
+    text-transform: uppercase; 
+    padding-bottom: 80px; 
+} 
+
+#ID_SECTION_TABLE_NEWS_CONTAINER div { 
+    display: inline-block; 
+    margin: 10px; 
+} 
+
+#ID_SECTION_TABLE_NEWS_CONTAINER div div { 
+    width: 250px;
+}
+
+#ID_SECTION_TABLE_NEWS_CONTAINER div div img { 
+    display: block; 
+    padding-bottom: 20px; 
+    width: 250px; 
+} 
+
+#ID_SECTION_TABLE_NEWS_CONTAINER div div a { 
+    display: block; 
+    text-align: left; 
+    text-decoration: none; 
+    padding: 5px 0; 
+    color: #888; 
+    transition: color 500ms linear; 
+} 
+
+div#ID_SECTION_TABLE_NEWS_CONTAINER div div a:nth-child(2) { 
+    padding-left: 20px; 
+}
+
+div#ID_SECTION_TABLE_NEWS_CONTAINER div div a:nth-child(2)::before { 
+    content: ""; 
+    position: absolute;  
+    display: block; 
+    border-radius: 2px;
+    background-color: orangered; 
+    width: 12px; 
+    height: 6px; 
+    transform: translate(-10px, 5px); 
+    margin-left: -10px;
+} 
+
+div#ID_SECTION_TABLE_NEWS_CONTAINER div div a:nth-child(3) { 
+    color: #000; 
+    font-size: 24px; 
+    font-weight: 700;  
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #E1E1E1; 
+} 
+
+div#ID_SECTION_TABLE_NEWS_CONTAINER div div a:nth-child(4) { padding-top: 20px; } 
+#ID_SECTION_TABLE_NEWS_CONTAINER div div a:hover { color: rgba(255, 0, 0, 0.76); } 
+
+/* SECTION FOLLOW US */ 
+#ID_SECTION_FOLLOW_US { 
+    padding: 10px;
+} 
+
+#ID_SECTION_FOLLOW_US_CONTAINER { 
+    width: 100%; 
+    max-width: 1300px; 
+    margin: 0 auto; 
+} 
+
+#ID_SECTION_FOLLOW_US_CONTAINER h1 { 
+    padding: 40px; 
+    font-size: 32px;
+    text-align: center;
+}
+
+#ID_SECTION_FOLLOW_US_CONTAINER div { 
+    display: inline-block; 
+    vertical-align: top; 
+    padding: 15px;
+}      
+
+#ID_SECTION_FOLLOW_US_CONTAINER div div { position: relative; } 
+
+#ID_SECTION_FOLLOW_US_CONTAINER div div ruby { display: block; }
+
+#ID_SECTION_FOLLOW_US_CONTAINER div div ruby:first-child { 
+    width: 260px; 
+    background: linear-gradient( to bottom, #F38181, #FCE38A ); 
+} 
+
+#ID_SECTION_FOLLOW_US_CONTAINER div div ruby:first-child img { 
+    display: block;  
+    transition: opacity 700ms linear; 
+} 
+
+#ID_SECTION_FOLLOW_US_CONTAINER div div:hover ruby:first-child img { 
+    opacity: 0.3; 
+} 
+
+#ID_SECTION_FOLLOW_US_CONTAINER div div ruby:nth-child(2) { 
+    max-width: 50px;
+    width: 100%; 
+    max-height: 50px;
+    height: 100%;
+    position: absolute; 
+    transform: translate(calc(200% - 0px), calc(-300% - 0px)); 
+    opacity: 0; 
+} 
+
+#ID_SECTION_FOLLOW_US_CONTAINER div div:hover ruby:nth-child(2) { 
+    opacity: 1;
+} 
+
+/* FOOTER */ 
+footer { background-color: #E9E2D8; } 
+
+#ID_FOOTER_CONTAINER { 
+    padding: 30px; 
+} 
+
+#ID_FOOTER_CONTAINER div { 
+    display: inline-block; 
+    padding: 3%;  
+} 
+
+#ID_FOOTER_CONTAINER div h3 { 
+    text-transform: uppercase; 
+    padding-bottom: 25px; 
+    width: 100px; 
+} 
+
+#ID_FOOTER_CONTAINER div a { 
+    display: block; 
+    padding: 7px 0; 
+    text-decoration: none; 
+    color: #888; 
+    transition: color 300ms linear; 
+} 
+
+#ID_FOOTER_CONTAINER div a:hover { 
+    color: rgb(200, 0, 0); 
+} 
+
+
+@media ( max-width: 768px ) { 
+
+    /* HEAD NAV BURGER */ 
+    #ID_HEADER_CONTAINER_INNER_SUB_NAV_BURGER { 
+        display: block; 
+    } 
+
+    #ID_HEADER_CONTAINER_INNER_SUB_NAV_BURGER ruby { 
+        display: block; 
+        width: 20px; 
+        border-top: 1px solid #000; 
+    } 
+
+    /* HEAD NAV */ 
+    #ID_HEADER_CONTAINER_INNER_NAV {
+        display: none; 
+    } 
+
+    #ID_HEADER_CONTAINER_INNER_NAV ul { 
+        display: block; 
+    } 
+
+    #ID_HEADER_CONTAINER_INNER_NAV ul li { 
+        padding: 10px 0; 
+    } 
+
+    .CLASS_SECTION_LIST_PRICE_CONTAINER div { 
+        display: block; 
+    } 
+} 
+
+
+
